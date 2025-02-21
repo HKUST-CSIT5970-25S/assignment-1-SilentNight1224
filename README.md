@@ -56,33 +56,33 @@
 
 ## Question 2: Measure the EC2 Network performance
 
-    * Measurement tool: iPerf to measure TCP bandwidth and Ping to measure RTT
-    * Configuration:
-        * Install iPerf in Ubuntu:
-        ```
-        sudo apt-get update
-        sudo apt-get install iperf
-        ```
-        * Run iPerf server:
-        ```
-        iperf -s -w 256K
-        ```
-        * Run iPerf client:
-        ```
-        iperf -c <server-ip> -w 256K
-        ```
-        * Use Ping to measure RTT:
-        ```
-        ping -c 10 <server-ip>
-        ```
-    * Parameter explanation:
-        * iperf -c: Run as the client.
-        * iperf -s: Run as the server.
-        * iperf -w: Set the window size (of TCP by default)
-        * ping -c 10 <server-ip>: Send 10 data packets to the specified server IP address and report the round-trip time (RTT) for each packet.
-    * Meaning of measurement results:
-        * TCP bandwidth refers to the maximum rate at which data can be transmitted over a TCP connection between two endpoints.
-        * RTT refers to the time it takes for a signal to travel from the source to the destination and back again.
+* Measurement tool: iPerf to measure TCP bandwidth and Ping to measure RTT
+* Configuration:
+    * Install iPerf in Ubuntu:
+    ```
+    sudo apt-get update
+    sudo apt-get install iperf
+    ```
+    * Run iPerf server:
+    ```
+    iperf -s -w 256K
+    ```
+    * Run iPerf client:
+    ```
+    iperf -c <server-ip> -w 256K
+    ```
+    * Use Ping to measure RTT:
+    ```
+    ping -c 10 <server-ip>
+    ```
+* Parameter explanation:
+    * iperf -c: Run as the client.
+    * iperf -s: Run as the server.
+    * iperf -w: Set the window size (of TCP by default)
+    * ping -c 10 <server-ip>: Send 10 data packets to the specified server IP address and report the round-trip time (RTT) for each packet.
+* Meaning of measurement results:
+    * TCP bandwidth refers to the maximum rate at which data can be transmitted over a TCP connection between two endpoints.
+    * RTT refers to the time it takes for a signal to travel from the source to the destination and back again.
 
 
 1. (1 mark) The metrics of network performance include **TCP bandwidth** and **round-trip time (RTT)**. Within the same region, what network performance is experienced between instances of the same type and different types? In order to answer this question, you need to complete the following table.
