@@ -46,9 +46,9 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro`  |     10.0005s    |  19094.52 MiB/sec  |
-    | `t2.medium` |     10.0009s    |  18977.09 MiB/sec  |
-    | `c5d.large` |     10.0020s    |  19666.64 MiB/sec  |
+    | `t2.micro`  |     10.0005s    |    20022.06 MB/s   |
+    | `t2.medium` |     10.0009s    |    19898.92 MB/s   |
+    | `c5d.large` |     10.0020s    |    20621.97 MB/s   |
 
     Based on the above table, I do not believe that the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource.
 
